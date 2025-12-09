@@ -2,78 +2,92 @@ import React from 'react';
 import { ShoppingBag, Code, Rocket, Gauge, Search, LayoutTemplate } from 'lucide-react';
 import { Project, Service, Experience } from './types';
 
-// Using local images uploaded to the root directory
-export const PROFILE_IMAGE = "/profile.jpg";
+// Import all local images from src/components
+import img1 from './1.png';
+import img2 from './2.png';
+import img3 from './3.png';
+import img4 from './4.png';
+import img5 from './5.png';
+import img6 from './6.png';
+import img7 from './7.png';
+import img8 from './8.png';
+import img9 from './9.png';
+import img10 from './10.png';
+
+// Profile image also imported
+import profileImg from './profile.jpg';
+
+export const PROFILE_IMAGE = profileImg;
 
 export const PROJECTS: Project[] = [
   {
     id: 1,
     title: "YvonneFx",
     category: "US Clothing Brand",
-    image: "/1.png",
+    image: img1,
     description: "Full coordinated hooded jacket and cargo pant set store."
   },
   {
     id: 2,
     title: "DTY Store",
     category: "Home Decor & Furniture",
-    image: "/2.png",
+    image: img2,
     description: "Direct to consumer furniture and home decor brand."
   },
   {
     id: 3,
     title: "Calveen",
     category: "Perfume Store",
-    image: "/3.png",
+    image: img3,
     description: "Luxury perfume store design with dark aesthetic."
   },
   {
     id: 4,
     title: "Inclusive Fashion",
     category: "Website Launch",
-    image: "/4.png",
+    image: img4,
     description: "Fashion for everyone. Minimalist design approach."
   },
   {
     id: 5,
     title: "Serino Vanti",
     category: "Perfume Store",
-    image: "/5.png",
+    image: img5,
     description: "High-end fragrance store with sales campaign integration."
   },
   {
     id: 6,
     title: "Beginning Boutique",
     category: "Clothing Brand",
-    image: "/6.png",
+    image: img6,
     description: "Vibrant lifestyle clothing brand for the modern era."
   },
   {
     id: 7,
     title: "AllFrom1Supplier",
     category: "Grocery Store",
-    image: "/7.png",
+    image: img7,
     description: "US Marketplace for West Indian & American Groceries."
   },
   {
     id: 8,
     title: "Essence Shorts",
     category: "Clothing Redesign",
-    image: "/8.png",
+    image: img8,
     description: "Redesign work for trending utility style clothing."
   },
   {
     id: 9,
     title: "Faded",
     category: "Vapes Store",
-    image: "/9.png",
+    image: img9,
     description: "Official website for premium vaping products."
   },
   {
     id: 10,
     title: "Softwares Store",
     category: "Software Licenses",
-    image: "/10.png",
+    image: img10,
     description: "Digital marketplace for software keys and licenses."
   }
 ];
