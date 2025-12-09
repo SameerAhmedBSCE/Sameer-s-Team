@@ -18,12 +18,25 @@ const Portfolio: React.FC = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {PROJECTS.map((project) => (
-            <div key={project.id} className="group relative overflow-hidden rounded-xl bg-white shadow-md cursor-pointer h-80">
-              <img 
-                src={project.image} 
-                alt={project.title} 
-                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-              />
+            <div 
+  key={`${project.id}-${index}`} 
+  className="
+    w-[300px] h-[251px]        /* Mobile size */
+    md:w-[940px] md:h-[788px]  /* Desktop size EXACT */
+    mx-4 relative group flex-shrink-0 rounded-xl 
+    overflow-hidden shadow-md
+  "
+>
+  <img 
+    src={project.image} 
+    alt={project.title} 
+    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+  />
+  <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+    <p className="text-white font-bold text-lg">{project.title}</p>
+  </div>
+</div>
+
               
               {/* Overlay */}
               <div className="absolute inset-0 bg-gradient-to-t from-brand-dark/90 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
