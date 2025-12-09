@@ -15,7 +15,10 @@ const ImageSlider: React.FC = () => {
           {sliderItems.map((project, index) => (
             <div 
               key={`${project.id}-${index}`} 
-              className="w-64 md:w-80 h-40 md:h-52 mx-4 relative group flex-shrink-0 rounded-xl overflow-hidden shadow-md"
+              // Dimensions set to match aspect ratio of 940x788
+              // Mobile: 300x251 (approx 32% scale)
+              // Desktop: 470x394 (50% scale)
+              className="w-[300px] h-[251px] md:w-[470px] md:h-[394px] mx-4 relative group flex-shrink-0 rounded-xl overflow-hidden shadow-md"
             >
               <img 
                 src={project.image} 

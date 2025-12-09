@@ -2,79 +2,78 @@ import React from 'react';
 import { ShoppingBag, Code, Rocket, Gauge, Search, LayoutTemplate } from 'lucide-react';
 import { Project, Service, Experience } from './types';
 
-// In a real scenario, these would be the uploaded image paths. 
-// Using placeholders that represent the provided screenshots.
-export const PROFILE_IMAGE = "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?fit=crop&w=800&q=80"; // Placeholder for Sameer's photo
+// Using local images uploaded to the root directory
+export const PROFILE_IMAGE = "/profile.jpg";
 
 export const PROJECTS: Project[] = [
   {
     id: 1,
     title: "YvonneFx",
     category: "US Clothing Brand",
-    image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=800&q=80",
+    image: "/1.png",
     description: "Full coordinated hooded jacket and cargo pant set store."
   },
   {
     id: 2,
     title: "DTY Store",
     category: "Home Decor & Furniture",
-    image: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&q=80",
+    image: "/2.png",
     description: "Direct to consumer furniture and home decor brand."
   },
   {
     id: 3,
     title: "Calveen",
     category: "Perfume Store",
-    image: "https://images.unsplash.com/photo-1594035910387-fea4779426e9?w=800&q=80",
+    image: "/3.png",
     description: "Luxury perfume store design with dark aesthetic."
   },
   {
     id: 4,
     title: "Inclusive Fashion",
     category: "Website Launch",
-    image: "https://images.unsplash.com/photo-1483985988355-763728e1935b?w=800&q=80",
+    image: "/4.png",
     description: "Fashion for everyone. Minimalist design approach."
   },
   {
     id: 5,
     title: "Serino Vanti",
     category: "Perfume Store",
-    image: "https://images.unsplash.com/photo-1616604417260-e7cad34b4815?w=800&q=80",
+    image: "/5.png",
     description: "High-end fragrance store with sales campaign integration."
   },
   {
     id: 6,
     title: "Beginning Boutique",
     category: "Clothing Brand",
-    image: "https://images.unsplash.com/photo-1525507119028-ed4c629a60a3?w=800&q=80",
+    image: "/6.png",
     description: "Vibrant lifestyle clothing brand for the modern era."
   },
   {
     id: 7,
     title: "AllFrom1Supplier",
     category: "Grocery Store",
-    image: "https://images.unsplash.com/photo-1542838132-92c53300491e?w=800&q=80",
+    image: "/7.png",
     description: "US Marketplace for West Indian & American Groceries."
   },
   {
     id: 8,
     title: "Essence Shorts",
     category: "Clothing Redesign",
-    image: "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=800&q=80",
+    image: "/8.png",
     description: "Redesign work for trending utility style clothing."
   },
   {
     id: 9,
     title: "Faded",
     category: "Vapes Store",
-    image: "https://images.unsplash.com/photo-1534346580053-9e4a3c224a0d?w=800&q=80",
+    image: "/9.png",
     description: "Official website for premium vaping products."
   },
   {
     id: 10,
     title: "Softwares Store",
     category: "Software Licenses",
-    image: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800&q=80",
+    image: "/10.png",
     description: "Digital marketplace for software keys and licenses."
   }
 ];
