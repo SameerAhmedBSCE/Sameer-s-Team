@@ -4,7 +4,7 @@ import { Project, Service, Experience } from './types';
 
 // In a real scenario, these would be the uploaded image paths. 
 // Using placeholders that represent the provided screenshots.
-export const PROFILE_IMAGE = "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?fit=crop&w=800&q=80"; // Placeholder for Sameer's photo
+export const PROFILE_IMAGE = "/profile.jpg"; // Placeholder for Sameer's photo
 
 export const PROJECTS: Project[] = [
   {
