@@ -18,7 +18,7 @@ const ImageSlider: React.FC = () => {
               // Dimensions set to match aspect ratio of 940x788
               // Mobile: 300x251 (approx 32% scale)
               // Desktop: 470x394 (50% scale)
-              className="w-[300px] h-[251px] md:w-[470px] md:h-[394px] mx-4 relative group flex-shrink-0 rounded-xl overflow-hidden shadow-md"
+              className="w-[300px] h-[251px] md:w-[940px] md:h-[783px] mx-4 relative group flex-shrink-0 rounded-xl overflow-hidden shadow-md"
             >
               <img 
                 src={project.image} 
