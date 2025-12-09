@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { CONTACT_INFO } from '../constants';
-import { Mail, Phone, MapPin, Send } from 'lucide-react';
+import { Mail, Send } from 'lucide-react';
 
 const Contact: React.FC = () => {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
@@ -27,7 +27,7 @@ const Contact: React.FC = () => {
           <div>
             <h2 className="text-4xl font-serif font-bold mb-6">Let's Build Something Great Together</h2>
             <p className="text-slate-400 mb-12 max-w-md">
-              Ready to start your next project? Drop me a message or contact me directly via email or phone.
+              Ready to start your next project? Drop me a message via email and let's discuss how we can elevate your online presence.
             </p>
 
             <div className="space-y-6">
@@ -38,26 +38,6 @@ const Contact: React.FC = () => {
                 <div>
                   <p className="text-sm text-slate-400">Email</p>
                   <p className="font-medium text-lg">{CONTACT_INFO.email}</p>
-                </div>
-              </div>
-
-              <div className="flex items-center gap-4">
-                <div className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center text-brand-accent">
-                  <Phone className="w-6 h-6" />
-                </div>
-                <div>
-                  <p className="text-sm text-slate-400">Phone</p>
-                  <p className="font-medium text-lg">{CONTACT_INFO.phone}</p>
-                </div>
-              </div>
-
-              <div className="flex items-center gap-4">
-                <div className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center text-brand-accent">
-                  <MapPin className="w-6 h-6" />
-                </div>
-                <div>
-                  <p className="text-sm text-slate-400">Location</p>
-                  <p className="font-medium text-lg">{CONTACT_INFO.location}</p>
                 </div>
               </div>
             </div>

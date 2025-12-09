@@ -30,7 +30,7 @@ const Navbar: React.FC<NavbarProps> = ({ onOpenAdmin }) => {
       <div className="container mx-auto px-6 flex justify-between items-center">
         
         <a href="#" className="text-2xl font-serif font-bold text-brand-dark flex items-center gap-2">
-          Sameer<span className="text-brand-accent">.</span>
+          Sameer Ahmed<span className="text-brand-accent">.</span>
         </a>
 
         {/* Desktop Menu */}

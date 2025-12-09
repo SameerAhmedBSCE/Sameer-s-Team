@@ -1,5 +1,5 @@
 import React from 'react';
-import { ShoppingBag, Code, rocket, gauge, Search, LayoutTemplate } from 'lucide-react';
+import { ShoppingBag, Code, Rocket, Gauge, Search, LayoutTemplate } from 'lucide-react';
 import { Project, Service, Experience } from './types';
 
 // In a real scenario, these would be the uploaded image paths. 
@@ -102,7 +102,7 @@ export const SERVICES: Service[] = [
     id: 4,
     title: "Speed Optimization",
     description: "Improving Core Web Vitals to ensure your store loads instantly.",
-    icon: <rocket className="w-6 h-6" /> // Note: Lowercase 'rocket' might be an issue with Lucide import, standardizing below
+    icon: <Rocket className="w-6 h-6" />
   },
   {
     id: 5,
@@ -133,18 +133,14 @@ export const EDUCATION = {
 
 export const CONTACT_INFO = {
   email: "sameerahmedbsce@gmail.com",
-  phone: "+92 313 0038897",
   linkedin: "https://www.linkedin.com/in/sameer-ahmed-ta/",
   github: "https://github.com/SameerAhmedBSCE",
   portfolio: "https://sameerahmedshopify.journoportfolio.com",
-  location: "Karachi 75400, Pakistan"
 };
 
 export const RESUME_CONTEXT = `
 Name: Sameer Ahmed
 Role: Shopify & React Developer
-Location: Karachi, Pakistan
-Phone: +92 313 0038897
 Email: sameerahmedbsce@gmail.com
 LinkedIn: linkedin.com/in/sameer-ahmed-ta
 GitHub: github.com/SameerAhmedBSCE

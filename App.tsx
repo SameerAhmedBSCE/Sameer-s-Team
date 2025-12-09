@@ -7,6 +7,8 @@ import About from './components/About';
 import Contact from './components/Contact';
 import AdminDashboard from './components/AdminDashboard';
 import GeminiAssistant from './components/GeminiAssistant';
+import ImageSlider from './components/ImageSlider';
+import StoreAudit from './components/StoreAudit';
 
 function App() {
   const [isAdminOpen, setIsAdminOpen] = useState(false);
@@ -24,7 +26,9 @@ function App() {
       
       <main>
         <Hero />
+        <ImageSlider />
         <Services />
+        <StoreAudit />
         <Portfolio />
         <About />
         <Contact />
