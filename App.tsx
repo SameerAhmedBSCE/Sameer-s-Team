@@ -20,6 +20,28 @@ function App() {
     localStorage.setItem('pageViews', (currentViews + 1).toString());
   }, []);
 
+  // Content Protection: Disable right-click and image dragging
+  useEffect(() => {
+    const handleContextMenu = (e: MouseEvent) => {
+      e.preventDefault();
+    };
+
+    const handleDragStart = (e: DragEvent) => {
+      // Prevent dragging of images
+      if (e.target instanceof HTMLImageElement) {
+        e.preventDefault();
+      }
+    };
+
+    document.addEventListener('contextmenu', handleContextMenu);
+    document.addEventListener('dragstart', handleDragStart);
+
+    return () => {
+      document.removeEventListener('contextmenu', handleContextMenu);
+      document.removeEventListener('dragstart', handleDragStart);
+    };
+  }, []);
+
   return (
     <div className="font-sans text-brand-dark antialiased selection:bg-brand-accent selection:text-white">
       <Navbar onOpenAdmin={() => setIsAdminOpen(true)} />
